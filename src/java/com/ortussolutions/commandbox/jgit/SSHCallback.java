@@ -18,7 +18,7 @@ public class SSHCallback implements TransportConfigCallback {
 
 	public void configure(Transport transport) {
 
-               SshdSessionFactory genericSessionFactory = new GenericSessionFactory();
+		SshdSessionFactory genericSessionFactory = new GenericSessionFactory();
 
 		SshTransport sshTransport = ( SshTransport )transport;
 		sshTransport.setSshSessionFactory( genericSessionFactory );
